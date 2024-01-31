@@ -1,1 +1,16 @@
-dd
+---
+layout: single
+title:  "240131 일곱번째 포스팅"
+---
+# PhysX 필기
+## 기본 구성 요소 <br>
+- PxFoundation : PhysX 프레임워크의 기반
+- PxPhysics : PhysX SDK를 담는 변수
+- PxPvd : PhysX Visual Debugger 프레임워크의 탑 수준 클래스
+## 함수
+- PxFoundation* PxCreateFoundation(PxU32 version, PxAllocatorCallback& allocator, PxErrorCallback& errorCallback)
+-> PxFoundation 생성
+- PxPvd* PxCreatePvd(*PxFoundation)
+-> 
+- PxRigidDynamic* PxCreateDynamic(PxPhysics& sdk, const PxTransform& transform, const PxGeometry& geometry,PxMaterial& material, PxReal density,const PxTransform& shapeOffset)
+-> 동적 PxRigid 생성
